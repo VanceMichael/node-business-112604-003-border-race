@@ -1,0 +1,16 @@
+{
+  "name": "支付与口岸联调端",
+  "operations": [
+    "charge",
+    "refund",
+    "manifest",
+    "amend",
+    "withdraw"
+  ],
+  "identity_fields": [
+    "requestId",
+    "runnerId",
+    "version"
+  ],
+  "facts": "charge 返回 paidAt、paymentId；refund 引用 paymentId。manifest 返回逐项 itemId、personVersion、accepted/rejected/pending；amend/withdraw 都返回所针对的原 itemId。受理时间与 HTTP 响应时间独立。"
+}

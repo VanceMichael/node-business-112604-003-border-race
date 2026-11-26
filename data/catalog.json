@@ -1,0 +1,47 @@
+{
+  "synthetic": true,
+  "event": {
+    "id": "race-a",
+    "capacity": 3,
+    "paymentDeadline": "2027-01-01T10:00:00+08:00",
+    "manifestSeal": "2027-01-01T12:00:00+08:00"
+  },
+  "policy": {
+    "localAreas": [
+      "area-a",
+      "area-b"
+    ],
+    "localPermit": "border-pass",
+    "otherPermit": "single-trip-pass",
+    "port": "port-a",
+    "raceDate": "2027-01-02"
+  },
+  "runners": [
+    {
+      "id": "runner-1",
+      "area": "area-a",
+      "permit": {
+        "id": "permit-1",
+        "type": "border-pass",
+        "ports": [
+          "port-a"
+        ],
+        "validUntil": "2027-02-01",
+        "usesLeft": 2
+      }
+    },
+    {
+      "id": "runner-2",
+      "area": "area-c",
+      "permit": {
+        "id": "permit-2",
+        "type": "single-trip-pass",
+        "ports": [
+          "port-a"
+        ],
+        "validUntil": "2027-02-01",
+        "usesLeft": 1
+      }
+    }
+  ]
+}

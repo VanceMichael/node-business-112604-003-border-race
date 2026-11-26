@@ -1,0 +1,76 @@
+{
+  "synthetic": true,
+  "records": [
+    {
+      "recordId": "synthetic-01",
+      "kind": "apply",
+      "payload": {
+        "runner": "runner-1"
+      }
+    },
+    {
+      "recordId": "synthetic-02",
+      "kind": "chargeResult",
+      "payload": {
+        "requestId": "charge-1",
+        "runnerId": "runner-1",
+        "version": 1,
+        "paymentId": "payment-1",
+        "paidAt": "2027-01-01T09:59:59+08:00"
+      }
+    },
+    {
+      "recordId": "synthetic-03",
+      "kind": "manifestResult",
+      "payload": {
+        "itemId": "item-1",
+        "runnerId": "runner-1",
+        "personVersion": 1,
+        "status": "accepted"
+      }
+    },
+    {
+      "recordId": "synthetic-04",
+      "kind": "replacePermit",
+      "payload": {
+        "runner": "runner-1",
+        "newPermit": "permit-3",
+        "version": 2
+      }
+    },
+    {
+      "recordId": "synthetic-05",
+      "kind": "manifestAmendResult",
+      "payload": {
+        "itemId": "item-1",
+        "personVersion": 2,
+        "status": "rejected",
+        "reason": "需补证"
+      }
+    },
+    {
+      "recordId": "synthetic-06",
+      "kind": "collect",
+      "payload": {
+        "runner": "runner-1",
+        "credential": "credential-1"
+      }
+    },
+    {
+      "recordId": "synthetic-07",
+      "kind": "cancel",
+      "payload": {
+        "runner": "runner-1"
+      }
+    },
+    {
+      "recordId": "synthetic-08",
+      "kind": "paymentCallback",
+      "payload": {
+        "requestId": "charge-1",
+        "paymentId": "payment-1",
+        "paidAt": "2027-01-01T09:59:59+08:00"
+      }
+    }
+  ]
+}
